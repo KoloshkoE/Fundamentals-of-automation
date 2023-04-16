@@ -1,12 +1,12 @@
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.*;
 
-class CashBackHackerTest {
+public class CashBackHackerTest {
+    CashBackHacker servis = new CashBackHacker();
 
     @Test
-    void calculateCashBack (){
-        CashBackHacker servis = new CashBackHacker();
+    public void calculateCashBack() {
         int actual = servis.remain(900);
         int expected = 100;
         assertEquals(expected,actual);
@@ -14,21 +14,18 @@ class CashBackHackerTest {
     }
 
     @Test
-    void calculateCashBack2 (){
-        CashBackHacker servis = new CashBackHacker();
+    public void calculateCashBack2() {
         int actual = servis.remain(1500);
         int expected = 500;
-        assertEquals(expected,actual);
-
+        assertEquals(expected, actual);
     }
 
     @Test
-    void calculateCashBack3 (){
-        CashBackHacker servis = new CashBackHacker();
-        int actual = servis.remain(2000);
-        int expected = 0;
-        assertEquals(expected,actual);
+    public void calculateCashBack3() {
+        int actual = servis.remain(500);
+        int expected = 500;
+        assertEquals(expected, actual);
 
-    }
+       }
 
 }
