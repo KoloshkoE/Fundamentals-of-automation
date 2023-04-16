@@ -1,33 +1,35 @@
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.testng.Assert.assertEquals;
 
 class CashBackHackerTest {
 
+
     @Test
-    void calculateCashBack (){
+    public void calculateCashBack() {
         CashBackHacker servis = new CashBackHacker();
         int actual = servis.remain(900);
         int expected = 100;
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
 
     }
 
     @Test
-    void calculateCashBack2 (){
+    public void calculateCashBack2() {
         CashBackHacker servis = new CashBackHacker();
         int actual = servis.remain(1500);
         int expected = 500;
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
 
     }
 
     @Test
-    void calculateCashBack3 (){
+    public void calculateCashBack3() {
         CashBackHacker servis = new CashBackHacker();
         int actual = servis.remain(2000);
         int expected = 0;
-        assertEquals(expected,actual);
+        assertEquals(expected, actual);
 
     }
 
