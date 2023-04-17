@@ -22,8 +22,8 @@ public class CashBackHackerTest {
 
     @Test
     public void calculateCashBack3() {
-        int actual = servis.remain(500);
-        int expected = 500;
+        int actual = servis.remain(3000);
+        int expected =0;
         assertEquals(expected, actual);
 
        }
